@@ -1,0 +1,16 @@
+- [x] Is 8 seconds considered a long time for a test to run?
+   - [x] Whatsapp analogy (8 seconds is a long time for a message to be sent right? That's the kind of feedback we're looking for)
+   - [x] Running tests locally vs CI
+- [x] Simple example
+  - [x] pytest.mark.parametrized
+  - [x] with pytest.raises(Exception)
+- [x] Frameworks testing utilities (pandas, asyncio, etc.)
+- [x] Fragile e2e tests (example: "tests/test_histogram_reporter.py") 
+- [x] Single Responsibility Principle: Extract dependencies, use test doubles (example: "tests/test_histogram_reporter_srp.py")
+   - [x] This test didn't fail when refactoring from per-word to per-char.
+   - [x] Tests eliminate fear of change.
+- [x] Patching make it easier to test (example: "tests/test_histogram_reporter_srp_patch.py")
+  - [x] No need to use explicit dependency injection (but you probably should nonetheless!)
+  - [x] Where to patch?
+    - https://docs.python.org/3/library/unittest.mock.html#where-to-patch
+- [x] Surprise from this morning! (example: "tests/test_histogram_reporter_codium.py")
